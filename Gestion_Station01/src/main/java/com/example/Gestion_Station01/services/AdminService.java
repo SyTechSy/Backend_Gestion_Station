@@ -42,7 +42,13 @@ public class AdminService {
         }
     }
 
-    // AJOUTER PHOTO DE PROFIL DES GETIONNAIRES
+    // LIST DES D'ADMINISTRATEUR SERVICE
+
+    // MODIFICATION DE L'ADMINISTRATEUR SERVICE
+
+    // SUPPRESSION DE L'ADMINISTRATEUR SERVICE
+
+    // AJOUTER PHOTO DE PROFIL DE L'ADMIN
     public Admin ajouterPhotoDeProfil(Long idAdmin, MultipartFile imageFile) throws Exception {
 
         Optional<Admin> optionalAdmin = adminRepository.findById(idAdmin);
@@ -58,7 +64,7 @@ public class AdminService {
         }
     }
 
-    // MODIFICATION PHOTO DE PROFIL DES GETIONNAIRES
+    // MODIFICATION PHOTO DE PROFIL DE L'ADMIN
     public Admin modifierPhotoDeProfil(Long idAdmin, MultipartFile imageFile) throws Exception {
 
         Optional<Admin> optionalAdmin = adminRepository.findById(idAdmin);
